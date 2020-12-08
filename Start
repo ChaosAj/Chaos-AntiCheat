@@ -1,0 +1,13 @@
+scoreboard players add @a credit 0
+
+tellraw @a[scores={credit=0}] {"rawtext":[{"text":"§aServer is running on §bChaos §aVersion:"}]}
+execute @a[scores={credit=0}] ~~~ function modules/version
+tellraw @a[scores={credit=0}] {"rawtext":[{"text":"§d contribute at /github.com/ChaosAj "}]}
+tellraw @a[scores={credit=0}] {"rawtext":[{"text":"§d join our projects discords:"}]}
+title @a[scores={credit=0}] subtitle §1§lBy Chaos AntiCheat§♫
+title @a[scores={credit=0}] title §b§lServer Protected§♫
+title @a[scores={credit=0}] actionbar §b§ldiscord: §♫ §c
+scoreboard players add @a[scores={credit=0}] credit 1
+tellraw @s {"rawtext":[{"text":"§cHydra Help Menu"}]}
+tellraw @s {"rawtext":[{"text":"§cyou are running on verion:"}]}
+function modules/version
